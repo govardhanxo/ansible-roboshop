@@ -79,4 +79,5 @@
     ansible.builtin.shell: mongosh --host mongodb.govardhanxo.site </app/db/master-data.js
     when: catalogue_output.stdout | int < 0
 
+  # we can tell this as error handler session 25 : 52:40 mins
 
