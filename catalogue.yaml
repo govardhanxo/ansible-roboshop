@@ -75,4 +75,8 @@
     ansible.builtin.debug:
       msg: "{{ catalogue_output }}"
 
-      
+  - name: load products
+    ansible.builtin.debug: mongosh --host mongodb.govardhanxo.site </app/db/master-data.js
+    when: catalogue_output.stdout < 0
+
+    
