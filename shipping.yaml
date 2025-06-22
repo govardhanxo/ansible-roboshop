@@ -60,15 +60,10 @@
       state: started
       enabled: yes
 
-  - name: install mysql client
-    ansible.builtin.dnf:
-      name: mysql
-      state: installed
-
   - name: connect to mysql to using app user
     community.mysql.mysql_info:
       login_user: shipping
-      login_password: Roboshop@1
+      login_password: RoboShop@1
       login_host: mysql.govardhanxo.site
       login_db: cities
 
