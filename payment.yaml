@@ -39,7 +39,7 @@
       requirements: requirements.txt
       executable: pip3.9 
     args:
-      chgdir: /app
+      chdir: /app
 
   - name: copy payment service
     ansible.builtin.copy:
